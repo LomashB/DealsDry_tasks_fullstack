@@ -25,8 +25,8 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <form onSubmit={handleSubmit} className="bg-darkBlue-800 p-6 rounded-lg shadow-lg ">
+    <div className="flex justify-center items-center mt-7">
+      <form onSubmit={handleSubmit} className="bg-blue-300 p-10 rounded-lg shadow-lg ">
         <h2 className="text-2xl mb-6 text-center font-bold">Login</h2>
         {error && <p className="text-red-500">{error}</p>}
         <div className="mb-4">
@@ -49,7 +49,7 @@ const LoginPage = () => {
             required
           />
         </div>
-        <button type="submit" className="w-full p-2 bg-darkBlue-500 hover:bg-darkBlue-400 rounded-lg  font-bold">
+        <button type="submit" className="w-full p-2 bg-blue-500 hover:bg-blue-400 rounded-lg  font-bold">
           Login
         </button>
       </form>

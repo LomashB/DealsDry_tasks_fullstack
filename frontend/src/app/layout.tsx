@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import '../styles/globals.css'
 import { Bell, ChevronRight, LogOut, Menu, Users, BarChart, UserPlus } from 'lucide-react'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -23,10 +24,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en">
-      <head>
-
-        <script src="https://cdn.tailwindcss.com"></script>
-      </head>
 
       <body className="bg-gray-100">
         <div className="flex h-screen overflow-hidden">

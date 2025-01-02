@@ -12,6 +12,7 @@ interface Employee {
   mobile: string
   designation: string
   course : string
+  image : string
 }
 
 const EmployeeList = () => {

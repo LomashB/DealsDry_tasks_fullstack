@@ -9,15 +9,15 @@ const router = express.Router();
 const upload = multer({ dest: 'uploads/' });
 
 // GET /api/employees
-router.get('/',  getEmployees);
+router.get('/', protect,  getEmployees);
 
 // POST /api/employees
-router.post('/', upload.single('image'), createEmployee);
+router.post('/', protect, upload.single('image'), createEmployee);
 
 // PUT /api/employees/:id
-router.put('/:id',  updateEmployee);
+router.put('/:id', protect, updateEmployee);
 
 // DELETE /api/employees/:id
-router.delete('/:id', deleteEmployee);
+router.delete('/:id', protect, deleteEmployee);
 
 module.exports = router;
